@@ -55,11 +55,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/1.json
-    - assets/2.json
-    - assets/3.json
-    - assets/4.json
-    - assets/5.json
+    - assets/
 
 
   # The following line ensures that the Material Icons font is

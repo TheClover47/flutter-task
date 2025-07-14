@@ -11,7 +11,7 @@ class InspectionCubit extends Cubit<InspectionState> {
   Future<void> loadSwing(int swingId) async {
     emit(InspectionLoading());
     try {
-      final jsonStr = await rootBundle.loadString('$swingId.json');
+      final jsonStr = await rootBundle.loadString('assets/$swingId.json');
       final jsonData = json.decode(jsonStr);
       final swingData = SwingData.fromJson(jsonData);
       emit(InspectionLoaded(swingData));
